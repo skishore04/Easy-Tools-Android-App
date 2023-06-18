@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ProfileActivity">
+
+        <View
+            android:id="@+id/topview"
+            android:layout_width="0dp"
+            android:layout_height="170dp"
+            android:background="@color/purple_700"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:background="@drawable/wave_3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/topview" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileimage"
+            android:layout_width="172dp"
+            android:layout_height="166dp"
+            android:background="@drawable/roundback"
+            app:layout_constraintEnd_toEndOf="@+id/view2"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="@+id/view2"
+            app:layout_constraintTop_toBottomOf="@+id/topview"
+            app:srcCompat="@drawable/ic_person" />
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/card_view"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonupload">
+
+            <TextView
+                android:id="@+id/nametext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/bacinput"
+                android:drawableStart="@drawable/ic_baseline_person_24"
+                android:drawablePadding="16dp"
+                android:hint="Loading...."
+                android:padding="10dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/emailtext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/bacinput"
+                android:drawableStart="@drawable/ic_baseline_email_24"
+                android:drawablePadding="6dp"
+                android:hint="Loading...."
+                android:padding="10dp"
+
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/phtext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/bacinput"
+                android:drawableStart="@drawable/ic_baseline_phone_iphone_24"
+                android:drawablePadding="6dp"
+                android:hint="Loading...."
+                android:padding="6dp"
+                android:text=""
+                android:textAlignment="textStart"
+                android:textColor="#FF5D05"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="261dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/artifika"
+            android:hint="Loading..."
+            android:text="Welcome"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="45dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/topview"
+            app:layout_constraintTop_toTopOf="@+id/topview" />
+
+        <TextView
+            android:id="@+id/welcomename"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:hint="Loading...."
+
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/welcome"
+            app:layout_constraintStart_toStartOf="@+id/welcome"
+            app:layout_constraintTop_toBottomOf="@+id/welcome" />
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:indeterminateTint="#FF0000"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/camera"
+            android:layout_width="55dp"
+            android:layout_height="47dp"
+            android:background="@drawable/bacinput"
+            app:layout_constraintBottom_toBottomOf="@+id/profileimage"
+            app:layout_constraintEnd_toEndOf="@+id/profileimage"
+            app:layout_constraintTop_toBottomOf="@+id/topview"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/camera" />
+
+        <Button
+            android:id="@+id/buttonupload"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Upload"
+            android:visibility="gone"
+            android:layout_marginEnd="52dp"
+            android:layout_marginStart="52dp"
+            android:background="@drawable/round_bg"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profileimage" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

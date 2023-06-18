@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QrGeneratorActivity">
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="QR Generator"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textColor="@color/purple_200"
+        android:textSize="30dp"
+        app:fontFamily="@font/artifika"
+        />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Generate a QR Code"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#FC9235"
+        android:textSize="20dp"
+         />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Text or URL"
+        android:id="@+id/edit_input"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"/>
+
+    <Button
+        android:id="@+id/bt_generate"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/purple_500"
+        android:text="Generate"
+        android:textColor="@color/white" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_qr"
+        android:scaleType="fitCenter"/>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:id="@+id/buttonlay"
+    android:visibility="gone"
+    android:layout_gravity="center_horizontal"
+    android:orientation="horizontal">
+    <Button
+        android:id="@+id/buttonshare"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonback"
+        android:drawableStart="@drawable/ic_baseline_share_24"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:textSize="15dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Share" />
+    <Button
+        android:id="@+id/buttondownload"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:layout_margin="5dp"
+        android:textSize="15dp"
+        android:drawableStart="@drawable/ic_baseline_download_24"
+        android:background="@drawable/buttonback"
+        android:layout_gravity="center_horizontal"
+        android:text="Download" />
+</LinearLayout>
+
+
+</LinearLayout>

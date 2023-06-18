@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "75768009195",
+    "project_id": "easytools-540d7",
+    "storage_bucket": "easytools-540d7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:75768009195:android:a68c3d5ad6f0ce972989ae",
+        "android_client_info": {
+          "package_name": "com.example.easytools"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "75768009195-nc1n22hrn8370bi92a36eq8k454ivrm6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBY9PVfODS0khgks_RsqdAyXHafncz-GQQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "75768009195-nc1n22hrn8370bi92a36eq8k454ivrm6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
